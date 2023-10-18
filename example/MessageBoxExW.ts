@@ -1,10 +1,4 @@
-// import { malloc, free, mblen } from 'https://deno.land/x/cstdlib@v0.0.3/mod.ts';
-
-import { calloc } from "../calloc/calloc.ts";
-import { mbstowcs } from "../mbstowcs/mbstowcs.ts";
-import { MessageBoxExW } from "../MessageBoxExW/MessageBoxExW.ts";
-import { free } from "../free/free.ts";
-import { NULL } from "../NULL/NULL.ts";
+import { calloc, MessageBoxExW, NULL, free, mbstowcs, _putws } from 'https://deno.land/x/msvc@v0.0.2/mod.ts';
 
 // // 8 byte malloc
 // let ptr = malloc(8);

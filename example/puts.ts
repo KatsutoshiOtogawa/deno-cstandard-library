@@ -1,12 +1,4 @@
-// import { malloc, free, mblen } from 'https://deno.land/x/cstdlib@v0.0.3/mod.ts';
-
-import { puts } from "../puts/puts.ts";
-
-// // 8 byte malloc
-// let ptr = malloc(8);
-
-// // free ptr;
-// free(ptr);
+import { puts } from 'https://deno.land/x/cstdio@v0.0.1/mod.ts';
 
 const buf = new TextEncoder().encode("あいうえお");
 
