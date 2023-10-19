@@ -1,4 +1,4 @@
-import { calloc, free, mbstowcs, _putws } from 'https://deno.land/x/msvc@v0.0.2/mod.ts';
+import { calloc, free, mbstowcs, _putws } from 'https://deno.land/x/msvc@v0.0.7/mod.ts';
 
 // // 8 byte malloc
 // let ptr = malloc(8);

@@ -1,4 +1,4 @@
-import { calloc, strcpy, free, puts} from 'https://deno.land/x/msvc@v0.0.6/mod.ts';
+import { calloc, strcpy, free, puts} from 'https://deno.land/x/msvc@v0.0.7/mod.ts';
 
 // // 8 byte malloc
 // let ptr = malloc(8);
