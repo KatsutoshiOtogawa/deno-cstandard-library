@@ -1,4 +1,5 @@
-import { calloc, MessageBoxExW,  free, mbstowcs, _putws } from 'https://deno.land/x/msvc@v0.0.6/mod.ts';
+import { calloc, MessageBoxExA, free, mbstowcs, _putws } from 'https://deno.land/x/msvc@v0.0.6/mod.ts';
+import { MB_YESNO  } from 'https://deno.land/x/msvc@v0.0.6/MessageBoxEx/Define.ts';
 
 // // 8 byte malloc
 // let ptr = malloc(8);
@@ -6,7 +7,7 @@ import { calloc, MessageBoxExW,  free, mbstowcs, _putws } from 'https://deno.lan
 // // free ptr;
 // free(ptr);
 
-const mbbuf = new TextEncoder().encode("あいうえお");
+const mbbuf = new TextEncoder().encode("abcdef");
 
 // 大き目にとる。文章なら1024見たいな取り方をしてもよい。
 // 
@@ -14,8 +15,8 @@ const mbbuf = new TextEncoder().encode("あいうえお");
 
 console.log(mbbuf.length);
 
-let wchar_size = 2
-let wchar_p = calloc(mbbuf.length, wchar_size);
+// let wchar_size = 2
+let wchar_p = calloc(mbbuf.length, 1);
 // これも大き目でよい。
 let size = 1024;
 
@@ -32,11 +33,11 @@ const buf = wchar_view.getArrayBuffer(mbbuf.length);
 
 console.log(buf);
 
-MessageBoxExW(
+MessageBoxExA(
     null,
     wchar_p,
-    wchar_p,
-    1,
+    null,
+    MB_YESNO,
     0
 )
 
