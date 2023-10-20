@@ -1,4 +1,4 @@
-import { getchar } from 'https://deno.land/x/cstdio@v0.0.3/mod.ts';
+import { getchar } from 'https://deno.land/x/msvc@v0.0.7/mod.ts';
 
 
 // 大き目にとる。文章なら1024見たいな取り方をしてもよい。
@@ -13,10 +13,6 @@ console.log(c);
 // String.fromCharCode(c);
 
 
-// ascii
-let str = String.fromCharCode(c);
-console.log(str);
-// Unicode
- str = String.fromCodePoint(c);
+const str = String.fromCharCode(c);
 
 console.log(str);

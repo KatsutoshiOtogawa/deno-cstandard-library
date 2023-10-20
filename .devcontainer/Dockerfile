@@ -13,6 +13,12 @@ RUN apt update  &&  apt upgrade -y
 
 RUN apt install -y pkg-config
 
+RUN sed -i -E 's/# (ja_JP.UTF-8)/\1/' /etc/locale.gen && \
+    locale-gen && \
+    update-locale LANG=ja_JP.UTF-8
+
+# LC_CTYPE="en_US.UTF-8"
+
 ENV NODE_VERSION=v20.7.0
 
 RUN wget "https://nodejs.org/dist/${NODE_VERSION}/node-${NODE_VERSION}-linux-x64.tar.xz"

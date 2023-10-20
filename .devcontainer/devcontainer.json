@@ -28,6 +28,7 @@
 		"vscode": {
 			"extensions": [
 				"denoland.vscode-deno",
+				"ms-vscode.cpptools-extension-pack"
 			],
 			"settings": {
 				"deno.enable": true,

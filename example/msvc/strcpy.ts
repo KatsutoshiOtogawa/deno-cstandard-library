@@ -1,7 +1,4 @@
-import { strcpy } from 'https://deno.land/x/cstringh@v0.0.1/mod.ts';
-
-import { puts } from 'https://deno.land/x/cstdio@v0.0.3/mod.ts';
-import { calloc, free } from 'https://deno.land/x/cstdlib@v0.0.3/mod.ts';
+import { calloc, strcpy, free, puts} from 'https://deno.land/x/msvc@v0.0.7/mod.ts';
 
 // // 8 byte malloc
 // let ptr = malloc(8);
@@ -27,7 +24,6 @@ const s_buf = s_view.getArrayBuffer(buf.length);
 strcpy(s_buf, buf)
 
 
-// コピーできたか確認。
 puts(s_buf);
 
 // new Uint8Array(s_buf);

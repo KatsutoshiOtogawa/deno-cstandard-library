@@ -17,6 +17,9 @@
 out/*
 !/out/.gitignore
 
+example/c/out/*
+!/example/c/out/.gitignore
+
 # Dependency directories (remove the comment below to include it)
 # vendor/
 

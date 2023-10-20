@@ -1,7 +1,7 @@
 // import { malloc, free, mblen } from 'https://deno.land/x/cstdlib@v0.0.3/mod.ts';
 
 
-import { fopen, fclose, fgets, puts } from 'https://deno.land/x/cstdio@v0.0.1/mod.ts';
+import { fopen, fclose, fgets, puts } from 'https://deno.land/x/cstdio@v0.0.2/mod.ts';
 import { calloc, free } from 'https://deno.land/x/cstdlib@v0.0.3/mod.ts';
 
 // // 8 byte malloc

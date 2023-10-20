@@ -1,5 +1,7 @@
 # deno-cstandard-library
 
+// export LC_ALL=ja_JP.UTF-8
+
 deno c compatible standard library
 
 It does not require any installation other than deno, and works in any environment supported by deno.

@@ -1,4 +1,4 @@
-import { putchar } from 'https://deno.land/x/cstdio@v0.0.3/mod.ts';
+import { putchar } from 'https://deno.land/x/msvc@v0.0.7/mod.ts';
 
 
 // アスキーコード1文字書き込む

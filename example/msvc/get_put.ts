@@ -1,4 +1,4 @@
-import { getchar, putchar } from 'https://deno.land/x/cstdio@v0.0.3/mod.ts';
+import { getchar, putchar } from 'https://deno.land/x/msvc@v0.0.7/mod.ts';
 
 
 // 見つけたら終了する文字
